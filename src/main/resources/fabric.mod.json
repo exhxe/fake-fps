@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fakefps",
+  "version": "${version}",
+  "name": "Fake FPS",
+  "description": "指定した範囲のランダムな偽FPSをHUDに表示します。/fakefps か Right Shift で設定。OptiLikeがあれば、そのビデオ設定からも開けます。",
+  "authors": [],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.fakefps.FakeFpsClient"],
+    "optilike": ["com.fakefps.OptiLikeBridge"]
+  },
+  "custom": {
+    "optilike": {
+      "label": "Fake FPS..."
+    }
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
